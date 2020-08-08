@@ -2,7 +2,7 @@ class ParksController < ApplicationController
 
   def index
     parks = Park.all
-    render json: parks, include: [:state]
+    render json: parks
   end
 
   def show
