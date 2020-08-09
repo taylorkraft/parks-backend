@@ -3,7 +3,7 @@ class StatesController < ApplicationController
   def index
     states = State.all
     # render json: StateSerializer.new(states).to_serialized_json
-    render json: states
+    render json: states, except: [:created_at, :updated_at]
   end
 
   def show
