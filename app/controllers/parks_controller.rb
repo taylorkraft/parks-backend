@@ -2,7 +2,7 @@ class ParksController < ApplicationController
 
   def index
     parks = Park.all
-    render json: parks
+    render json: parks, except: [:created_at, :updated_at]
   end
 
   def show
