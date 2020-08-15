@@ -11,7 +11,7 @@ class ParksController < ApplicationController
   end
 
   def create 
-    park = Park.new(park_params(:name, :location)
+    park = Park.new(park_params(:name, :location))
     if park.save
       render json: park
     else
