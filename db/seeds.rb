@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+State.destroy_all
+Park.destroy_all
 
 california = State.create(name: "California", flower: "California poppy")
 colorado = State.create(name: "Colorado", flower: "Rocky Mountain columbine")

@@ -12,6 +12,15 @@ class StatesController < ApplicationController
     render json: state
   end
 
+  def create 
+    state = State.new(state_params(:name, :flower))
+    if state.save
+      render json: state
+    else
+      render json: {error: state.errors.full_messages}
+    end
+  end
+
   def update
     state = State.find(params[:id])
     state.update(state_params(:name, :flower))
