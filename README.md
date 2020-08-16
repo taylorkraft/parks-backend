@@ -8,6 +8,10 @@ A User can add a new state, and assocaiate a National Park and it's location wit
 
 Run commands:
 
+git clone git@github.com:taylorkraft/parks-backend.git
+
+cd into parks-backend
+
 rails db:seed
 
 rails s
