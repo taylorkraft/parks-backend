@@ -8,9 +8,9 @@
 State.destroy_all
 Park.destroy_all
 
-california = State.create(name: "California", flower: "California poppy")
-colorado = State.create(name: "Colorado", flower: "Rocky Mountain columbine")
-oregon = State.create(name: "Oregon", flower: "Oregon grape")
+california = State.create(name: "California")
+colorado = State.create(name: "Colorado")
+oregon = State.create(name: "Oregon")
 
 ci = Park.create(name: "Channel Islands", location: "Ventura", state: california)
 dv = Park.create(name: "Death Valley", location: "Death Valley", state: california)

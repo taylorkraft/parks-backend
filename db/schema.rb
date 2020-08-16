@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2020_08_07_145945) do
 
   create_table "states", force: :cascade do |t|
     t.string "name"
-    t.string "flower"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
