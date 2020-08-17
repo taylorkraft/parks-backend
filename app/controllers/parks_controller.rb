@@ -11,7 +11,7 @@ class ParksController < ApplicationController
   end
 
   def create 
-    park = Park.new(park_params(:name, :location))
+    park = Park.new(park_params)
     if park.save
       render json: park
     else
@@ -21,14 +21,14 @@ class ParksController < ApplicationController
 
   def update
     park = Park.find(params[:id])
-    park.update(park_params(:name, :location))
+    park.update(park_params)
     render json: park
   end
 
   private
 
-  def park_params(*args)
-    params.require(:park).permit(*args)
+  def park_params
+    params.require(:park).permit(:name, :location, :state_id)
   end
 
 end
