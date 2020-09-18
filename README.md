@@ -2,9 +2,9 @@
 
 Run commands:
 
-git clone git@github.com:taylorkraft/parks-backend-react.git
+git clone git@github.com:taylorkraft/parks-backend.git
 
-cd into parks-backend-react
+cd into parks-backend
 
 rails db:seed
 
